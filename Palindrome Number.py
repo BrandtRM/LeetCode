@@ -7,6 +7,8 @@ class Solution:
         while left <= right:
             if left == right:
                 return True
+            elif left + 1 == right and pal[left] == pal[right]:
+                return True
             
             if pal[left] != pal[right]:
                 return False
